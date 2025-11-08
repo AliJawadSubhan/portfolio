@@ -6,10 +6,8 @@ import Career from "./pages/career";
 const App = () => {
   return (
     <div className="flex">
-      {/* Left vertical line */}
-      <div className="flex flex-col items-center ml-5">
+      <div className="fixed flex flex-col items-center left-5 ">
         <div className="h-[290px] w-[1px] bg-[#ABB2BF]"></div>
-
         <a
           href="https://github.com/AliJawadSubhan"
           target="_blank"
@@ -21,7 +19,6 @@ const App = () => {
             className="p-1 hover:opacity-80 transition"
           />
         </a>
-
         <a
           href="https://www.linkedin.com/in/alijawadsubhan/"
           target="_blank"
@@ -33,7 +30,6 @@ const App = () => {
             className="p-1 hover:opacity-80 transition"
           />
         </a>
-
         <a
           href="https://stackoverflow.com/users/20531439/ali-jawad"
           target="_blank"
@@ -46,8 +42,9 @@ const App = () => {
           />
         </a>
       </div>
+
       {/* Right side: main content */}
-      <div className="flex-1">
+      <div className="flex-1 ml-[80px]">
         <Navbar />
         <AboutMe />
         <Career />

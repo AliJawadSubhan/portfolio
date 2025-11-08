@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center p-8 ">
+    <nav className="flex justify-between items-center p-8 bg-transparent">
       {/* Contact Me Live button */}
       <div className="flex items-center justify-between w-full px-8 py-0">
         {/* Left side — name */}

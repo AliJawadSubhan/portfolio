@@ -25,19 +25,24 @@ const AboutMe = () => {
             <span className="text-white font-medium">Dart</span>, delivering
             seamless cross-platform experiences.
           </p>
-          <p className="mt-3">
+          {/* <p className="mt-3">
             Beyond mobile, he has contributed to{" "}
             <span className="text-white font-medium">Node.js</span> projects,
             working with both{" "}
             <span className="text-white font-medium">TypeScript</span> and{" "}
             <span className="text-white font-medium">JavaScript</span> to build
             APIs and backend services.
-          </p>
+          </p> */}
         </div>
 
-        <button className="mt-8 border-2 border-[#C778DD] text-[#C778DD] px-6 py-3 rounded-md font-medium hover:bg-[#C778DD] hover:text-white transition-all duration-300 ease-in-out">
-          Know about my career
-        </button>
+        <div className="gap-2 mt-8 flex">
+          <button className="border-2 border-[#C778DD] text-[#C778DD] px-6 py-3 rounded-md font-medium hover:bg-[#C778DD] hover:text-white transition-all duration-300 ease-in-out">
+            Know about my career
+          </button>
+          <button className="border-2 border-[#ABB2BF] text-white bg-[#ABB2BF] px-6 py-3 rounded-md font-medium hover:bg-transparent hover:text-[#ABB2BF] transition-all duration-300 ease-in-out">
+            Download my resume
+          </button>
+        </div>
       </div>
 
       <div>
