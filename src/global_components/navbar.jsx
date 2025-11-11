@@ -7,7 +7,14 @@ const Navbar = () => {
       {/* Contact Me Live button */}
       <div className="flex items-center justify-between w-full px-8 py-0">
         {/* Left side — name */}
-        <div className="text-5xl font-bold text-white">Ali Jawad</div>
+        <div
+          className="text-5xl font-bold text-[#C778DD] relative inline-block 
+        hover:text-opacity-80 hover:translate-y-1 
+        transition-all duration-300 ease-in-out
+        before:absolute before:-bottom-1 before:left-0 before:w-full before:h-1 before:bg-[#C778DD] before:scale-x-0 before:origin-left before:transition-transform before:duration-300 hover:before:scale-x-100"
+        >
+          Ali Jawad
+        </div>
 
         {/* Right side — nav links */}
         <div className="flex space-x-6 text-lg">
@@ -38,8 +45,6 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Contact with ping animation */}
-          {/* Contact with ping animation */}
           <div className="flex items-center text-[#C778DD]">
             #
             <a

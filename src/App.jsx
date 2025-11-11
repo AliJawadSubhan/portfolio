@@ -2,11 +2,14 @@ import React from "react";
 import Navbar from "./global_components/navbar";
 import AboutMe from "./pages/about-me";
 import Career from "./pages/career";
+import SmoothScrollSection from "./global_components/scroll_animator"; // import the scroll wrapper
+import Project from "./pages/projects";
 
 const App = () => {
   return (
     <div className="flex">
-      <div className="fixed flex flex-col items-center left-5 ">
+      {/* Left fixed social links */}
+      <div className="fixed flex flex-col items-center left-5">
         <div className="h-[290px] w-[1px] bg-[#ABB2BF]"></div>
         <a
           href="https://github.com/AliJawadSubhan"
@@ -45,9 +48,22 @@ const App = () => {
 
       {/* Right side: main content */}
       <div className="flex-1 ml-[80px]">
-        <Navbar />
-        <AboutMe />
-        <Career />
+        {/* Wrap each section in SmoothScrollSection */}
+        <SmoothScrollSection>
+          <Navbar />
+        </SmoothScrollSection>
+
+        <SmoothScrollSection>
+          <AboutMe />
+        </SmoothScrollSection>
+
+        <SmoothScrollSection>
+          <Career />
+        </SmoothScrollSection>
+
+        <SmoothScrollSection>
+          <Project />
+        </SmoothScrollSection>
       </div>
     </div>
   );

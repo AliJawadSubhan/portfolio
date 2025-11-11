@@ -1,13 +1,21 @@
 import React from "react";
+import CareerTimeline from "../global_components/career_timeline";
+import SmoothScrollSection from "../global_components/scroll_animator"; // import the scroll wrapper
 
 const Career = () => {
   return (
-    <div className="flex flex-row p-8 h-screen justify-between">
-      <div className="flex items-center relative">
-        <h1 className="text-white text-4xl font-bold pr-4">#Career</h1>
-        <div className="h-[1px] bg-[#C778DD] w-[444px] absolute left-full top-1/2 transform -translate-y-1/2"></div>
+    <div className="flex flex-row justify-between h-screen bg-[#282C33] px-16 py-2">
+      <div className="flex flex-col">
+        <div className="flex relative mt-12">
+          <h1 className="text-white text-4xl font-bold pr-4">#Career</h1>
+          <div className="h-[2px] bg-[#C778DD] w-[444px] mt-5"></div>
+        </div>
+        <div className="pt-8">
+          <SmoothScrollSection>
+            <CareerTimeline />
+          </SmoothScrollSection>
+        </div>
       </div>
-      <img src="src/assets/Github.svg" alt="" className="h-[190px]" />
     </div>
   );
 };
